@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+app/node_modules/
+
+# Build output
+dist/
+app/dist/
+out/
+
+# Secrets / local env — NEVER commit private keys or app secrets
+.env
+.env.*
+*.key
+secrets.json
+
+# OS / editor cruft
+.DS_Store
+*.log

@@ -1,0 +1,21 @@
+{
+  "name": "shared-subscriptions-prototype",
+  "version": "0.1.0",
+  "description": "Decentralised shared-subscription pools: streaming payments, proof-gated payout, bonds, decentralised disputes.",
+  "private": true,
+  "scripts": {
+    "compile": "node compile.js",
+    "test": "node compile.js && node test.js && node test-verifier.js && node test-reclaim-adapter.js && node test-parser-fuzz.js && node test-audit-fixes.js && node test-audit-fixes-2.js && node test-fuzz-regressions.js",
+    "fuzz": "node test-invariant.js 20 150",
+    "chain": "ganache --deterministic --miner.blockTime 1 --miner.defaultGasPrice 0 --chain.chainId 1337",
+    "deploy": "node scripts/deploy.js",
+    "deploy:testnet": "node scripts/deploy-testnet.js"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "@reclaimprotocol/verifier-solidity-sdk": "^1.0.4",
+    "ethers": "^6.0.0",
+    "ganache": "^7.9.2",
+    "solc": "0.8.26"
+  }
+}

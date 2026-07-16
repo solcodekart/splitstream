@@ -1,0 +1,26 @@
+{
+  "mode": "injected",
+  "rpcUrl": "https://ethereum-sepolia-rpc.publicnode.com",
+  "tokenDecimals": 18,
+  "cycleDuration": 120,
+  "reminderWindow": 20,
+  "chain": {
+    "chainId": 11155111,
+    "name": "Ethereum Sepolia",
+    "currency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "rpcUrls": [
+      "https://ethereum-sepolia-rpc.publicnode.com"
+    ],
+    "explorer": "https://sepolia.etherscan.io"
+  },
+  "contracts": {
+    "factory": "0xCD88013cBdCF0044bE28955DaF2C80F34e158123",
+    "token": "0x5fe52FD9bB10aE1aCaC047EB7f6882BC7CA7155E",
+    "verifier": "0xFCACCcA054e55C890228b7E9545056acDcf95f11",
+    "arbitrator": "0xd2d9aEd72b17fA4029A5789EFc3F1577C4a802AB"
+  }
+}
